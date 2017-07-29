@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Dialogbox : MonoBehaviour
 {
+	public Controller Controller;
 	public Text TxtName;
 	public Text TxtText;
 
@@ -19,7 +20,7 @@ public class Dialogbox : MonoBehaviour
 			{
 				if (old != gameObject)
 				{
-					DestroyImmediate(old);
+					old.GetComponent<Dialogbox>().Close();
 				}
 			}
 		}
@@ -27,6 +28,10 @@ public class Dialogbox : MonoBehaviour
 
 	public void ShowDialog(int key)
 	{
+		if(Controller && Controller.PauseTimer)
+		{
+			Controller.IsPaused = true;
+		}
 		key = key - 1;
 		string[] lines = ((TextAsset)Resources.Load(DialogFile, typeof(TextAsset))).text.Split('\n');
 
@@ -37,6 +42,10 @@ public class Dialogbox : MonoBehaviour
 
 	public void Close()
 	{
+		if(Controller && Controller.PauseTimer)
+		{
+			Controller.IsPaused = false;
+		}
 		Destroy(gameObject);
 	}
 }
