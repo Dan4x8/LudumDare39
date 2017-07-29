@@ -176,7 +176,7 @@ GameObject:
   - component: {fileID: 1624547626}
   - component: {fileID: 1624547627}
   m_Layer: 0
-  m_Name: modern-minimalist-bedroom
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
