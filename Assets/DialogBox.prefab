@@ -120,6 +120,7 @@ GameObject:
   - component: {fileID: 224607675353148416}
   - component: {fileID: 114291102804700188}
   - component: {fileID: 114282987142197982}
+  - component: {fileID: 61254203696805470}
   m_Layer: 5
   m_Name: DialogBox
   m_TagString: MessageBox
@@ -127,6 +128,31 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!61 &61254203696805470
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1801147370968848}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -2.5359192, y: -1.1645355}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 973.51666, y: 166.6456}
+  m_EdgeRadius: 0
 --- !u!114 &114282987142197982
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -190,6 +216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b289f55ed6f9a14eaee9920533d16f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Controller: {fileID: 0}
   TxtName: {fileID: 114517134974333726}
   TxtText: {fileID: 114746630925339382}
   DialogFile: dlgTest
