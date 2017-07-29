@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SleepingRoomController : Controller {
 
@@ -38,6 +39,9 @@ public class SleepingRoomController : Controller {
 			print(t);
 		}
 		ShowDialog(8);
+		while (IsPaused)
+			yield return new WaitForEndOfFrame();
+		SceneManager.LoadScene("Classroom");
 	}
 
 }
