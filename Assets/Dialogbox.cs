@@ -3,27 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Dialogbox : MonoBehaviour {
+public class Dialogbox : MonoBehaviour
+{
+	public Text TxtName;
+	public Text TxtText;
 
-	Image imgTextBackground;
-	Image imgNameBackground;
+	public string DialogFile = "dlgTest";
 
-	// Use this for initialization
-	void Start ()
+	public void ShowDialog(int key)
 	{
-		Image[] imgs = GetComponentsInChildren<Image>();
-		imgTextBackground = imgs[0];
+		key = key - 1;
+		string[] lines = ((TextAsset)Resources.Load(DialogFile, typeof(TextAsset))).text.Split('\n');
 
-		//SetTransparency(0.5f);
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-	public void SetTransparency(float alpha)
-	{
-		imgTextBackground.color = new Color(imgTextBackground.color.r, imgTextBackground.color.g, imgTextBackground.color.b, alpha);
+		string[] text = lines[key].Split(';');
+		TxtText.text = text[1].Replace("\\n", "\n");
+		TxtName.text = text[0];
 	}
 }
