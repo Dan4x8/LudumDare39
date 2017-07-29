@@ -10,6 +10,21 @@ public class Dialogbox : MonoBehaviour
 
 	public string DialogFile = "dlgTest";
 
+	public void Awake()
+	{
+		GameObject[] olds = GameObject.FindGameObjectsWithTag("MessageBox");
+		if(olds.Length > 1)
+		{
+			foreach (GameObject old in olds)
+			{
+				if (old != gameObject)
+				{
+					DestroyImmediate(old);
+				}
+			}
+		}
+	}
+
 	public void ShowDialog(int key)
 	{
 		key = key - 1;
@@ -18,5 +33,10 @@ public class Dialogbox : MonoBehaviour
 		string[] text = lines[key].Split(';');
 		TxtText.text = text[1].Replace("\\n", "\n");
 		TxtName.text = text[0];
+	}
+
+	public void Close()
+	{
+		Destroy(gameObject);
 	}
 }
