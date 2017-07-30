@@ -78,7 +78,7 @@ public class BlobScript : MonoBehaviour {
 				}
 				Parent.position -= direction * step;
 
-				DecreaseHealth(); ;
+				DecreaseHealth();
 				break;
 			case BlobDifficulty.ClickNTimes:
 				DecreaseHealth();
