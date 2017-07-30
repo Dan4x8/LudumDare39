@@ -765,12 +765,12 @@ Prefab:
     - target: {fileID: 114300258371503140, guid: 746c7eb3806b52144847106acd905b35,
         type: 2}
       propertyPath: BlobSpeed
-      value: 20
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 114300258371503140, guid: 746c7eb3806b52144847106acd905b35,
         type: 2}
       propertyPath: BlobSetbackMod
-      value: 30
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 102486138235442022, guid: 746c7eb3806b52144847106acd905b35,
         type: 2}
@@ -1057,12 +1057,12 @@ Prefab:
     - target: {fileID: 114300258371503140, guid: 746c7eb3806b52144847106acd905b35,
         type: 2}
       propertyPath: BlobSpeed
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 114300258371503140, guid: 746c7eb3806b52144847106acd905b35,
         type: 2}
       propertyPath: BlobSetbackMod
-      value: 30
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 102486138235442022, guid: 746c7eb3806b52144847106acd905b35,
         type: 2}
@@ -1124,12 +1124,12 @@ Prefab:
     - target: {fileID: 114300258371503140, guid: 746c7eb3806b52144847106acd905b35,
         type: 2}
       propertyPath: BlobSpeed
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 114300258371503140, guid: 746c7eb3806b52144847106acd905b35,
         type: 2}
       propertyPath: BlobSetbackMod
-      value: 30
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 102486138235442022, guid: 746c7eb3806b52144847106acd905b35,
         type: 2}
@@ -1139,7 +1139,7 @@ Prefab:
     - target: {fileID: 114300258371503140, guid: 746c7eb3806b52144847106acd905b35,
         type: 2}
       propertyPath: Behaviour
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 746c7eb3806b52144847106acd905b35, type: 2}

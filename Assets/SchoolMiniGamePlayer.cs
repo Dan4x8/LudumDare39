@@ -14,9 +14,9 @@ public class SchoolMiniGamePlayer : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-		var maxRot = 40;
-		var minRot = -40;
-		var x = Input.GetAxis("Horizontal")*-1;
+		var maxRot = 38;
+		var minRot = -38;
+		var x = Input.GetAxis("Horizontal") * -1;
 		if (rotation + x >= minRot && rotation + x <= maxRot)
 		{
 			rotation = rotation + x;
