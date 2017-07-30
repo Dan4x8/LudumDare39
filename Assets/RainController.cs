@@ -2,11 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RainController : Controller
 {
 	public Dialogbox DialogBox;
 	public GameObject Emily;
+
+	public SpriteRenderer Fog;
 
 	// Use this for initialization
 	void Start () {
@@ -56,8 +59,20 @@ public class RainController : Controller
 		if(EmilySteps >= 3)
 		{
 			ShowDialog(25);
+			StartCoroutine(WaitForEnding());
 		}
 		Emily.transform.localScale = new Vector3(.8f + EmilySteps * .1f, .8f + EmilySteps * .1f, .8f + EmilySteps * .1f);
+		Fog.color *= new Vector4(1f, 1f, 1f, .7f);
+	}
+
+	IEnumerator WaitForEnding()
+	{
+		while (IsPaused)
+		{
+			yield return new WaitForEndOfFrame();
+		}
+		SceneManager.LoadScene("Title");
+		//SceneManager.LoadScene("Ending");
 	}
 
 }
