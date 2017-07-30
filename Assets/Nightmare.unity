@@ -765,7 +765,7 @@ Prefab:
     - target: {fileID: 114300258371503140, guid: 746c7eb3806b52144847106acd905b35,
         type: 2}
       propertyPath: BlobSpeed
-      value: 2
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 114300258371503140, guid: 746c7eb3806b52144847106acd905b35,
         type: 2}
@@ -1057,7 +1057,7 @@ Prefab:
     - target: {fileID: 114300258371503140, guid: 746c7eb3806b52144847106acd905b35,
         type: 2}
       propertyPath: BlobSpeed
-      value: 2
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 114300258371503140, guid: 746c7eb3806b52144847106acd905b35,
         type: 2}
@@ -1068,6 +1068,11 @@ Prefab:
         type: 2}
       propertyPath: m_Text
       value: '...use it...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114300258371503140, guid: 746c7eb3806b52144847106acd905b35,
+        type: 2}
+      propertyPath: Difficulty
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 746c7eb3806b52144847106acd905b35, type: 2}
@@ -1119,7 +1124,7 @@ Prefab:
     - target: {fileID: 114300258371503140, guid: 746c7eb3806b52144847106acd905b35,
         type: 2}
       propertyPath: BlobSpeed
-      value: 1.5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114300258371503140, guid: 746c7eb3806b52144847106acd905b35,
         type: 2}
@@ -1130,6 +1135,11 @@ Prefab:
         type: 2}
       propertyPath: m_Text
       value: The Rope...
+      objectReference: {fileID: 0}
+    - target: {fileID: 114300258371503140, guid: 746c7eb3806b52144847106acd905b35,
+        type: 2}
+      propertyPath: Behaviour
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 746c7eb3806b52144847106acd905b35, type: 2}
