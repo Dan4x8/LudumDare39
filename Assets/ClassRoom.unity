@@ -150,7 +150,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4200152037920246, guid: 4fbf3a3ce3ee4c646bed38b78e8c3edd, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 212374385498868660, guid: 4fbf3a3ce3ee4c646bed38b78e8c3edd,
         type: 2}
@@ -785,9 +785,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c9ef7ac2ac17a246936a6bf290ce449, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PauseTimer: 1
+  IsPaused: 0
   AvoidObjectsMinigame: 1
-  ThrownObject: {fileID: 114535469303897076, guid: 62ce19cf39e61714e991dd6dd80ac22e,
-    type: 2}
+  ThrownObjects:
+  - {fileID: 114895276299360238, guid: 291ea79c59f5506488b9d0cb149f2b6c, type: 2}
+  - {fileID: 114652019431739672, guid: 78c8f20ae8221894292a82d9508c39ed, type: 2}
   BlobTargetPrefab: {fileID: 114389452672560954, guid: 3779aca78194c44418daed348dd08a83,
     type: 2}
   Blob: {fileID: 1205033901203490, guid: 746c7eb3806b52144847106acd905b35, type: 2}
@@ -809,6 +812,13 @@ MonoBehaviour:
   - So much pressure
   - The nightmare from last night
   - Why?
+  - No future
+  - Hopeless
+  - This is going nowhere
+  - No chance
+  - I want to cry
+  DialogBox: {fileID: 114291102804700188, guid: 99675b2bed40c9b4ba7117a9e8c6f3e0,
+    type: 2}
 --- !u!4 &1484130339
 Transform:
   m_ObjectHideFlags: 0
@@ -820,5 +830,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

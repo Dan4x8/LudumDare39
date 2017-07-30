@@ -10,6 +10,8 @@ public class ThrownSchoolObject : MonoBehaviour {
 	public Vector3 MaxScale = new Vector3(9f, 9f, 9f);
 	public float Threshold = .8f;
 
+	public ClassRoomController Controller;
+
 	private Vector3 Target;
 	private Vector3 StartingPoint;
 	private SpriteRenderer Sprite;
@@ -41,6 +43,7 @@ public class ThrownSchoolObject : MonoBehaviour {
 		transform.position = Vector3.Lerp(StartingPoint, Target, t);
 		Sprite.color = Color.Lerp(OriginalColor, new Color(OriginalColor.r, OriginalColor.g, OriginalColor.b, 1f), t);
 		transform.localScale = Vector3.Lerp(Vector3.one, MaxScale, t);
+		transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0f, 0f, 180f), 3);
 	}
 
 	float t;
@@ -49,7 +52,8 @@ public class ThrownSchoolObject : MonoBehaviour {
 	{
 		if (t / TimeToTarget >= Threshold)
 		{
-			print("TRIGGERED");
+			Controller.Hits++;
+			DestroyObject(gameObject);
 		}
 	}
 }
