@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Title.unity
+    guid: 3798064aba3d12043af2c7742ca346b7
+  - enabled: 1
     path: Assets/Nightmare.unity
     guid: 0b2a0dfc9c3d2d14b8106a25f0c8d6be
   - enabled: 1
@@ -14,3 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/ClassRoom.unity
     guid: 87f807a54b89bea469f582e1240aa9b5
+  - enabled: 1
+    path: Assets/Market.unity
+    guid: e41e8a3249556094fab0f96710bec9e0
