@@ -67,6 +67,10 @@ public class BlobScript : MonoBehaviour {
 				float speed = BlobSpeed * .1f;
 				float step = speed * Time.fixedDeltaTime * BlobSetbackMod;
 				Vector3 direction = Target.transform.position - Parent.position;
+				if(direction == Vector3.zero)
+				{
+					direction = new Vector3(Random.Range(1.5f, 2.5f), Random.Range(1.5f, 2.5f))*5;
+				}
 				Parent.position -= direction * step;
 
 				DecreaseHealth(); ;
