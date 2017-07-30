@@ -19,6 +19,11 @@ public class BlobScript : MonoBehaviour {
 
 	private int _blobHealth = 1;
 
+	public void SetBlobInitHealth(int val)
+	{
+		BlobInitHealth = val;
+	}
+
 	// Use this for initialization
 	void Start ()
 	{
