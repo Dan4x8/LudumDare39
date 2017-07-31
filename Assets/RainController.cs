@@ -71,8 +71,7 @@ public class RainController : Controller
 		{
 			yield return new WaitForEndOfFrame();
 		}
-		SceneManager.LoadScene("Title");
-		//SceneManager.LoadScene("Ending");
+		SceneManager.LoadScene("EndingScreen");
 	}
 
 }

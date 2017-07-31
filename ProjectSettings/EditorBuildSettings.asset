@@ -20,3 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Market.unity
     guid: e41e8a3249556094fab0f96710bec9e0
+  - enabled: 1
+    path: Assets/RainScene.unity
+    guid: d6e3ff834064368478efefd57a2159cc
+  - enabled: 1
+    path: Assets/EndingScreen.unity
+    guid: 193f6c9701e5734499786da463093f44

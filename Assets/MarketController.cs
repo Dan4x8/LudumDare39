@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MarketController : Controller {
 
@@ -100,5 +101,10 @@ public class MarketController : Controller {
 			print(t);
 		}
 		ShowDialog(23);
+		while(IsPaused)
+		{
+			yield return new WaitForEndOfFrame();
+		}
+		SceneManager.LoadScene("RainScene");
 	}
 }
